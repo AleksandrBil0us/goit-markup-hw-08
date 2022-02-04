@@ -1,0 +1,76 @@
+.hero {
+  background-color: var(--additional-background-color);
+  text-align: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 767px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero-mobile.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero-tablet.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero-Img.png);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &__title {
+    color: var(--additional-text-color);
+
+    @include fontText(900, 26px, 1.62, 0.06em);
+
+    text-transform: uppercase;
+
+    max-width: 360px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      @include fontText(900, 44px, 1.36, 0.06em);
+      max-width: 696px;
+    }
+  }
+}
+.hero__btn {
+  @extend %btn;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

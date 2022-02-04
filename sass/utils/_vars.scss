@@ -1,0 +1,25 @@
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* цвет акцента текста #2196F3 */
+/* дополнительный цвет текста (хедер, футер) #FFFFFF */
+/* цвет ссылок футера  rgba(255, 255, 255, 0.6); */
+/* основной цвет фона  #ffffff */
+/* вторичный цвет фона  #F5F4FA */
+/* дополнительный цвет фона #2F303A */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --additional-text-color: #ffffff;
+  --footer-link-text-color: rgba(255, 255, 255, 0.6);
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --additional-background-color: #2f303a;
+}
+
+@mixin fontText($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
