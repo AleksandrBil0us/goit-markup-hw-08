@@ -35,13 +35,23 @@
 }
 
 .command__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 768px) {
+    width: 354px;
     margin-right: 30px;
     margin-bottom: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
 
   @media screen and (min-width: 1200px) {
+    width: 270px;
     margin-bottom: 0;
     flex-basis: calc(100% / 4 - 30px);
   }
