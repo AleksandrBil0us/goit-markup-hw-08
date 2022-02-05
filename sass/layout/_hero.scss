@@ -19,7 +19,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero-mobile.png);
+      url(../images/hero-mobile.png);
   }
 
   @media screen and (min-width: 768px) {
@@ -28,7 +28,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero-tablet.png);
+      url(../images/hero-tablet.png);
   }
 
   @media screen and (min-width: 1200px) {
@@ -37,7 +37,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero-Img.png);
+      url(../images/hero-Img.png);
 
     padding-top: 200px;
     padding-bottom: 200px;

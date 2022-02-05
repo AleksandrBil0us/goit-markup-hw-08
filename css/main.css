@@ -484,21 +484,21 @@ body {
 @media screen and (max-width: 768px) {
   .hero {
     max-width: 767px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mobile.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.png);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 1199px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tablet.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.png);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-Img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-Img.png);
     padding-top: 200px;
     padding-bottom: 200px;
   }
