@@ -12,9 +12,11 @@
   height: 100vh;
   z-index: 9;
 
+  // overflow-y: auto;
   // padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 48px;
+  padding-left: 15px;
 
   background-color: #fff;
   transform: translateY(-120%);
@@ -77,8 +79,32 @@
   color: var(--primary-text-color);
   @include fontText(500, 40px, 1.17, 0.02em);
 
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  position: relative;
+
   &.current {
     color: var(--accent-color);
+  }
+
+  &.current::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+
+    border-radius: 2px;
+
+    animation-name: current;
+    animation-duration: 250ms;
   }
 
   &:hover,
@@ -90,6 +116,10 @@
 .mobile__contacts-link {
   color: var(--accent-color);
   @include fontText(500, 30px, 1.17, 0.02em);
+
+  @media screen and (min-width: 480px) {
+    @include fontText(500, 34px, 1.17, 0.02em);
+  }
 }
 
 .mobile__contacts-link--mail {
@@ -100,7 +130,7 @@
 .mobile__social-link {
   display: block;
   color: var(--accent-color);
-  @include fontText(500, 13px, 1.22, 0.02em);
+  @include fontText(500, 12px, 1.22, 0.02em);
 
   @media screen and (min-width: 400px) {
     @include fontText(500, 18px, 1.22, 0.02em);
