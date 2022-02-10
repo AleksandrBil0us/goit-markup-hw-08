@@ -230,6 +230,7 @@
 
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 
   &:focus,
   &:hover {
@@ -238,17 +239,16 @@
   }
 }
 
-//   &__text {
-//     display: block;
-//     text-align: left;
-//     margin-left: 29px;
-//   }
+.btn-footer__text {
+  display: block;
+  text-align: left;
+  margin-left: 29px;
+}
 
-//   &__icon {
-//     position: absolute;
-//     top: 50%;
-//     right: 28px;
+.btn-footer__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
 
-//     transform: translateY(-50%);
-//   }
-// }
+  transform: translateY(-50%);
+}
